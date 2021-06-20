@@ -22,7 +22,7 @@
         </div>
         <div class="tile is-parent is-6">
             <article class="tile is-child box">
-                <h1 class="title is-1">Courses</h1>
+                <h1 class="title is-1 has-text-centered">Courses</h1>
             </article>
         </div>
     </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="tile is-parent is-6">
             <article class="tile is-child box  is-shadowless">
-                <h2 class="subtitle is-2	">Listes prédéfinies</h2>
+                <h2 class="subtitle is-2 has-text-centered">Listes prédéfinies</h2>
             </article>
         </div>
 
@@ -59,11 +59,11 @@
                                     </article>
                                     <article class="tile is-child box is-2 notification is-primary is-shadowless ">
                                         <a href="articles?liste=${listeEnCours.idListe}"><i
-                                                class="fas fa-shopping-cart is-pulled-right	"></i></a>
+                                                class="fas fa-shopping-cart is-pulled-right	fas fa-2x" title="accéder au panier"></i></a>
                                     </article>
                                     <article class="tile is-child box is-2 notification is-primary is-shadowless">
                                         <a href="supp?liste=${listeEnCours.idListe}"><i
-                                                class="fas fa-trash is-pulled-right	"></i></a>
+                                                class="fas fa-trash is-pulled-right	fas fa-2x" title="supprimer la liste"></i></a>
                                     </article>
                                 </div>
                             </div>
@@ -80,8 +80,8 @@
         <div class="tile is-parent is-3">
         </div>
         <div class="tile is-parent is-6">
-            <article class="tile is-child box">
-                <a href="new"><i class="fas fa-plus-circle"></i></a>
+            <article class="tile is-child box is-shadowless has-text-centered">
+                <a href="new"><span class="icon is-large has-text-primary"><i class="fas fa-plus-circle  fas fa-2x " title="ajouter"></i></span></a>
             </article>
         </div>
     </div>
@@ -89,6 +89,16 @@
 
 </main>
 
-<footer>Caroline G.</footer>
+<footer>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+        </div>
+        <div class="tile is-parent is-6">
+            <article class="tile is-child box is-shadowless">
+                <p class="has-text-centered">Caroline G.</p>
+            </article>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

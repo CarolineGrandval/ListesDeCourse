@@ -48,6 +48,7 @@ public class ArticlesServlet extends HttpServlet {
                 }
             }
         }
+
         req.getRequestDispatcher("WEB-INF/accueil.jsp").forward(req, resp);
     }
 }

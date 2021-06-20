@@ -17,7 +17,15 @@
 </head>
 <body>
 <header>
-    <h1>Courses</h1>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+        </div>
+        <div class="tile is-parent is-6">
+            <article class="tile is-child box">
+                <h1 class="title is-1 has-text-centered">Courses</h1>
+            </article>
+        </div>
+    </div>
 </header>
 
 <main>
@@ -26,7 +34,7 @@
         </div>
         <div class="tile is-parent is-6">
             <article class="tile is-child box  is-shadowless">
-                <h2 class="subtitle is-2	">Nouvelle liste</h2>
+                <h2 class="subtitle is-2 has-text-centered	">Nouvelle liste</h2>
             </article>
         </div>
     </div>
@@ -43,7 +51,7 @@
 
                             <div class="field is-horizontal">
                                 <div class="field-label is-normal">
-                                    <label class="label" for="liste">Nom : </label>
+                                    <label class="label has-text-left" for="liste">Nom de la liste : </label>
                                 </div>
                                 <div class="field-body">
                                     <div class="field">
@@ -63,7 +71,7 @@
 
                             <div class="field is-horizontal">
                                 <div class="field-label is-normal">
-                                    <label class="label" for="article">Article : </label>
+                                    <label class="label has-text-left" for="article">Article : </label>
                                 </div>
                                 <div class="field-body">
                                     <div class="field">
@@ -79,7 +87,7 @@
                             </div>
 
 
-                            <div class="control">
+                            <div class="control ">
                                 <input class="button is-primary" type="submit" name="save" value="Enregistrer">
                             </div>
 
@@ -95,8 +103,10 @@
         <div class="tile is-parent is-3">
         </div>
         <div class="tile is-parent is-6">
-            <article class="tile is-child box">
-                <a href="accueil"><i class="fas fa-home"></i></a>
+            <article class="tile is-child box is-shadowless has-text-centered">
+                <a href="accueil"><span class="icon is-large has-text-primary">
+                    <i class="fas fa-home fas fa-2x" title="accueil"></i>
+                </span></a>
             </article>
         </div>
     </div>
@@ -104,6 +114,16 @@
 
 </main>
 
-<footer>Caroline G.</footer>
+<footer>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+        </div>
+        <div class="tile is-parent is-6">
+            <article class="tile is-child box is-shadowless">
+                <p class="has-text-centered">Caroline G.</p>
+            </article>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

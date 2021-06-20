@@ -12,10 +12,20 @@
 <html>
 <head>
     <title>Panier</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 </head>
 <body>
 <header>
-    <h1>Courses</h1>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+        </div>
+        <div class="tile is-parent is-6">
+            <article class="tile is-child box">
+                <h1 class="title is-1 has-text-centered">Courses</h1>
+            </article>
+        </div>
+    </div>
 </header>
 
 <main>
@@ -25,8 +35,8 @@
         </div>
         <div class="tile is-parent is-6">
             <article class="tile is-child box  is-shadowless">
-                <h2 class="subtitle is-2">Votre panier</h2>
-                <p class="subtitle is-3	">${liste.nom}</p>
+                <h2 class="subtitle is-2 has-text-centered">Votre panier</h2>
+                <p class="subtitle is-3	has-text-centered">${liste.nom}</p>
             </article>
         </div>
     </div>
@@ -51,7 +61,23 @@
                                 </div>
                             </c:forEach>
 
-                            <input class="button is-primary" type="submit" value="Valider">
+                            <div class="tile is-ancestor">
+                                <div class="tile is-parent is-3">
+                                </div>
+                                <div class="tile is-parent is-6">
+                                    <article class="tile is-child box is-shadowless has-text-centered">
+                                        <button class="button is-primary is-inverted" type="submit" value="Valider">
+                                            <span class="icon is-large has-text-primary"><i class="fas fa-home fas fa-2x " title="accueil"></i></span>
+                                        </button>
+
+                                        <a href="articles?liste=${liste.idListe}">
+                                            <span class="icon is-large has-text-primary"><i class="fas fa-eraser fa-2x" title="vider le panier"></i></span>
+                                        </a>
+
+                                    </article>
+                                </div>
+                            </div>
+
                         </form>
                     </article>
 
@@ -60,19 +86,21 @@
         </div>
     </div>
 
-    <div class="tile is-ancestor">
-        <div class="tile is-parent is-3">
-        </div>
-        <div class="tile is-parent is-6">
-            <article class="tile is-child box">
-                <a href="accueil"><i class="fas fa-home"></i></a>
-            </article>
-        </div>
-    </div>
+
 
 
 </main>
 
-<footer>Caroline G.</footer>
+<footer>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-3">
+        </div>
+        <div class="tile is-parent is-6 ">
+            <article class="tile is-child box is-shadowless">
+                <p class="has-text-centered">Caroline G.</p>
+            </article>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
